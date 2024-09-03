@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         h={{ base: '80%', md: '50%', lg: '30%' }}
         flexShrink={0}
       >
-        <Avatar src="static/me1.png" size="full" />
+        <Avatar src="/me1.png" size="full" />
       </Box>
     </Flex>
   );
