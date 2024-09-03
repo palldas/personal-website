@@ -16,7 +16,6 @@ import {
   Alert, // Import Alert component
   AlertIcon,
   AlertTitle,
-  AlertDescription,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
