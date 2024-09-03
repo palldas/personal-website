@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
             e.preventDefault(); // Prevent default form submission
             const form = e.target as HTMLFormElement;
             const formData = new FormData(form);
-            fetch("https://formsubmit.co/palldas37@gmail.com", {
+            fetch("https://formsubmit.co/padas@calpoly.edu", {
               method: "POST",
               body: formData,
               headers: {
