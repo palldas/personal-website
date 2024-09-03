@@ -35,7 +35,7 @@ type Project = {
   image: string;
   tags: string[];
   tools: string[];
-  sourceCode?: string;  // Optional property
+  sourceCode?: string; // Optional property
   deployedLink?: string; // Optional property
 };
 
@@ -77,15 +77,6 @@ const projects: Project[] = [
     deployedLink: "https://thankful-tree-04ab28e1e.5.azurestaticapps.net/", // Replace with actual link
   },
   {
-    title: "Playlist Analyzer",
-    detailedDescription:
-      "Playlist Analyzer uses the Spotify API to provide insights into user playlists. It offers detailed analytics and recommendations based on listening habits, increasing user engagement by 50% through interactive music data visualizations.",
-    image: "/spotify.png", // Replace with actual image path
-    tags: ["Full-Stack Development", "APIs and Integrations"],
-    tools: ["Python", "Flask", "HTML/CSS", "JavaScript", "Spotify API"],
-    sourceCode: "https://github.com/palldas/Spotify-Playlist-Analyzer", // Replace with actual link
-  },
-  {
     title: "Dog Breed Classifier",
     detailedDescription:
       "This project involves creating a convolutional neural network to accurately classify images of dog breeds. It leverages TensorFlow and Keras for model training and validation, achieving 95% accuracy in breed identification.",
@@ -97,12 +88,50 @@ const projects: Project[] = [
   {
     title: "Emergeny Call Classifier",
     detailedDescription:
-      "Streamlined operational response times by 40% for the Seattle Police Department, in partnership with Accenture, by creating an Emergency Call Classifier using React.js, AWS Comprehend (NLP), DynamoDB, and WebSocket API, significantly boosting real-time incident management.",
+      "Project worked on at the DxHub in partnership with Accenture. Streamlined operational response times by 40% for the Seattle Police Department by creating an Emergency Call Classifier using React.js, AWS Comprehend (NLP), DynamoDB, and WebSocket API, significantly boosting real-time incident management.",
     image: "/spd.png", // Replace with actual image path
     tags: ["AI/ML", "APIs and Integrations", "Cloud Computing"],
-    tools: ["React.js", "Node.js", "AWS DynamoDB", "AWS S3", "AWS Lambda", "AWS Transcribe", "AWS API Gateway", "WebSocket API", "AWS Comprenend (NLP)"],
-    sourceCode: "https://github.com/cal-poly-dxhub/emergency-call-classification", // Replace with actual link
+    tools: [
+      "React.js",
+      "Node.js",
+      "AWS DynamoDB",
+      "AWS S3",
+      "AWS Lambda",
+      "AWS Transcribe",
+      "AWS API Gateway",
+      "WebSocket API",
+      "AWS Comprenend (NLP)",
+    ],
+    sourceCode:
+      "https://github.com/cal-poly-dxhub/emergency-call-classification", // Replace with actual link
     deployedLink: "https://spdcare.calpoly.io/", // Replace with actual link
+  },
+  {
+    title: "Playlist Analyzer",
+    detailedDescription:
+      "Playlist Analyzer uses the Spotify API to provide insights into user playlists. It offers detailed analytics and recommendations based on listening habits, increasing user engagement by 50% through interactive music data visualizations.",
+    image: "/spotify.png", // Replace with actual image path
+    tags: ["Full-Stack Development", "APIs and Integrations"],
+    tools: ["Python", "Flask", "HTML/CSS", "JavaScript", "Spotify API"],
+    sourceCode: "https://github.com/palldas/Spotify-Playlist-Analyzer", // Replace with actual link
+  },
+  {
+    title: "Personal Website",
+    detailedDescription:
+      "This site! My personal portfolio contains information regarding my technical skills, personal projects, internships, and research opportunities. This web application was built with React.js and Node.js, utilizing the ChakraUI library for a user-friendly experience.",
+    image: "/site.png", // Replace with actual image path
+    tags: ["Full-Stack Development"],
+    tools: [
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "Vercel",
+      "ChakraUI",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
+    sourceCode: "https://github.com/palldas/personal-website", // Replace with actual link
+    deployedLink: "https://palldas.vercel.app", // Replace with actual link
   },
   {
     title: "File Texter",
