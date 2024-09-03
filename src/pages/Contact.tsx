@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
         {/* Image Section */}
         <Box display="flex" justifyContent="center" alignItems="center">
           <Image
-            src="public/contact.png" // Replace with your image path
+            src="/contact.png" // Replace with your image path
             alt="Contact Image"
             borderRadius="md"
             objectFit="cover"
