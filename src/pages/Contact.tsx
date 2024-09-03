@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Box,
   Heading,
@@ -21,9 +21,6 @@ const MotionHeading = motion(Heading);
 const MotionBox = motion(Box);
 
 const Contact: React.FC = () => {
-  // Use a ref to access the form element
-  const formRef = useRef<HTMLFormElement>(null);
-
   return (
     <Box
       minH="100vh"
@@ -48,7 +45,6 @@ const Contact: React.FC = () => {
         {/* Contact Form Section */}
         <VStack
           as="form"
-          ref={formRef} // Attach the ref to the form element
           spacing={4}
           align="stretch"
           paddingTop="50px"
@@ -67,7 +63,6 @@ const Contact: React.FC = () => {
               .then((data) => {
                 if (data.success) {
                   alert("Message sent successfully!");
-                  form.reset(); // Clear the form fields
                 } else {
                   alert("There was an error sending your message.");
                 }
