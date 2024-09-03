@@ -8,7 +8,6 @@ import {
   WrapItem,
   Button,
   Image,
-  Stack,
   SimpleGrid,
   Tag,
   HStack,
@@ -29,8 +28,19 @@ const MotionBox = motion(Box);
 const MotionImage = motion(Image);
 const MotionHeading = motion(Heading);
 
-// Project data
-const projects = [
+// Define a TypeScript type for your project data
+type Project = {
+  title: string;
+  detailedDescription: string;
+  image: string;
+  tags: string[];
+  tools: string[];
+  sourceCode?: string;  // Optional property
+  deployedLink?: string; // Optional property
+};
+
+// Project data with explicit type
+const projects: Project[] = [
   {
     title: "LocalLens",
     detailedDescription:
@@ -128,7 +138,7 @@ const tags = [
 
 const Projects: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // Use Project type with | null for optional state
 
   const [selectedTag, setSelectedTag] = useState("All");
   const filteredProjects =
@@ -137,7 +147,7 @@ const Projects: React.FC = () => {
       : projects.filter((project) => project.tags.includes(selectedTag));
 
   // Handle project card click
-  const handleProjectClick = (project: any) => {
+  const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
     onOpen();
   };

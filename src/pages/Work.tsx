@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, VStack, Stack, SimpleGrid, Tag, HStack, Image } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, SimpleGrid, Tag, HStack, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 
