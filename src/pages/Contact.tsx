@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Heading,
@@ -12,7 +12,11 @@ import {
   Image,
   Text,
   HStack,
-  Link, // Import Link component
+  Link,
+  Alert, // Import Alert component
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -21,6 +25,9 @@ const MotionHeading = motion(Heading);
 const MotionBox = motion(Box);
 
 const Contact: React.FC = () => {
+  // State for handling form submission
+  const [formStatus, setFormStatus] = useState<{ submitted: boolean; success?: boolean }>({ submitted: false });
+
   return (
     <Box
       minH="100vh"
@@ -62,12 +69,16 @@ const Contact: React.FC = () => {
               .then((response) => response.json())
               .then((data) => {
                 if (data.success) {
-                  alert("Message sent successfully!");
+                  setFormStatus({ submitted: true, success: true });
+                  form.reset(); // Clear form fields
                 } else {
-                  alert("There was an error sending your message.");
+                  setFormStatus({ submitted: true, success: false });
                 }
               })
-              .catch((error) => alert("Error: " + error.message));
+              .catch((error) => {
+                setFormStatus({ submitted: true, success: false });
+                alert("Error: " + error.message);
+              });
           }}
         >
           <MotionHeading
@@ -85,11 +96,27 @@ const Contact: React.FC = () => {
             </Text>
           </MotionHeading>
 
+          {/* Display success or error message after form submission */}
+          {formStatus.submitted && (
+            <Alert
+              status={formStatus.success ? "success" : "error"}
+              borderRadius="md"
+              mb={4}
+            >
+              <AlertIcon />
+              {formStatus.success ? (
+                <AlertTitle>Message sent successfully!</AlertTitle>
+              ) : (
+                <AlertTitle>There was an error sending your message.</AlertTitle>
+              )}
+            </Alert>
+          )}
+
           <FormControl id="name">
             <FormLabel color="white">NAME</FormLabel>
             <Input
               type="text"
-              name="name" // Add name attribute
+              name="name"
               bg="purple.700"
               borderColor="purple.600"
               placeholder="Enter your name"
@@ -102,7 +129,7 @@ const Contact: React.FC = () => {
             <FormLabel color="white">EMAIL</FormLabel>
             <Input
               type="email"
-              name="email" // Add name attribute
+              name="email"
               bg="purple.700"
               borderColor="purple.600"
               placeholder="Enter your email"
@@ -114,7 +141,7 @@ const Contact: React.FC = () => {
           <FormControl id="message">
             <FormLabel color="white">MESSAGE</FormLabel>
             <Textarea
-              name="message" // Add name attribute
+              name="message"
               bg="purple.700"
               borderColor="purple.600"
               placeholder="Enter your message"
@@ -126,6 +153,7 @@ const Contact: React.FC = () => {
           <Button colorScheme="purple" size="lg" mt={4} type="submit">
             LET'S CONNECT!
           </Button>
+          
           <MotionBox
             initial={{ y: 40 }}
             animate={{ y: 0 }}
