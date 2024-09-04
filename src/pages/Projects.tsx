@@ -115,6 +115,21 @@ const projects: Project[] = [
     sourceCode: "https://github.com/palldas/Spotify-Playlist-Analyzer",
   },
   {
+    title: "Lung Cancer Prediction Model",
+    detailedDescription:
+      "Trained and optimized Linear Regression, KNN, and classification model algorithms to predict lung cancer, achieving an 85% accuracy and 89% precision, significantly enhancing early detection capabilities.",
+    image: "/lung.png",
+    tags: ["AI/ML"],
+    tools: [
+      "Python",
+      "Linear Regression",
+      "KNN (Regression & Classification)",
+      "Scikit-Learn",
+      "Pandas",
+    ],
+    sourceCode: "https://github.com/palldas/Lung-Cancer-Prediction-Model",
+  },
+  {
     title: "Personal Website",
     detailedDescription:
       "This site! My personal portfolio contains information regarding my technical skills, personal projects, internships, and research opportunities. This web application was built with React.js and Node.js, utilizing the ChakraUI library for a user-friendly experience.",
