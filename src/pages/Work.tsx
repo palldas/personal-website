@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 
 const MotionHeading = motion(Heading);
 
-// Updated work experiences with image URLs
 const workExperiences = [
   {
     company: 'Pacific Gas and Electric Company (PG&E)',
@@ -12,7 +11,7 @@ const workExperiences = [
     duration: 'June 2024 - September 2024',
     description: 'As a PG&E SWE Intern on the Cloud Platform Engineering Team, I developed a Terraform composite web module for AWS EC2 featuring an Auto Scaling Group scheduler with customer-friendly time inputs, optimizing scalability, enhancing resource management, and significantly reducing cloud infrastructure costs. Additionally, I created a comprehensive Terraform implementation runbook for Cloud DevOps partners, which accelerated the onboarding process and facilitated faster cloud adoption, boosting operational efficiency. To maintain adherence to SDLC methodologies, I utilized industry-leading project management tools such as Jira, driving an efficient Agile development workflow and improving team collaboration and productivity.',
     skills: ['Amazon Web Services (AWS)', 'Terraform', 'CI/CD Pipeline', 'Generative AI', 'AWS EC2', 'AWS Bedrock', 'AWS Data Migration Service', 'Agile Methodologies', 'Jira', 'Python'],
-    image: '/pge2.png',  // Replace with the actual image path
+    image: '/pge2.png',
   },
   {
     company: 'Cal Poly Digital Transformation Hub - Powered by AWS',
@@ -20,7 +19,7 @@ const workExperiences = [
     duration: 'July 2023 - Present',
     description: "As a Junior Developer at the AWS DxHub, I've worked with various customers to build scalable solutions using the latest technologies to solve important challenges in the public sector. I built an innovative Media Search Finder for the World Bank utilizing AWS Amplify, Kendra, Transcribe, Lambda, S3, and Python scripts. This tool introduced speaker detection and timestamping features, which led to a 90% reduction in content search time. Additionally, I streamlined operational response times by 40% for the Seattle Police Department in collaboration with Accenture by developing an Emergency Call Classifier. This classifier, built with React.js, AWS Comprehend for natural language processing (NLP), DynamoDB, and WebSocket API, significantly enhanced real-time incident management capabilities.",
     skills: ['Python', 'Amazon Web Services (AWS)', 'JavaScript', 'React.js', 'DynamoDB', 'Serverless Architecture', 'Agile Methodologies', 'AWS S3', 'AWS Lambda'],
-    image: '/dxhub.png',  // Replace with the actual image path
+    image: '/dxhub.png',
   },
   {
     company: 'Cal Poly College of Engineering',
@@ -28,9 +27,8 @@ const workExperiences = [
     duration: 'June 2023 - June 2024',
     description: "I developed a full-stack, block-based programming platform using TypeScript and React.js, incorporating real-time collaborative capabilities through WebSockets. This platform allows teachers to monitor and interact with students effectively, resulting in a 70% increase in student engagement. To enhance the platform's reliability and user experience, I utilized a Firebase back-end database for seamless authentication, storage, and deployment. This approach contributed to an 83% rise in interest in computer science among underrepresented students. Additionally, I led the integration of the Bilingual Networked Robotics Teaching Platform into local elementary and middle schools, which expanded access to over 150 students and significantly improved computational thinking education throughout San Luis Obispo.",
     skills: ['React.js', 'JavaScript', 'TypeScript', 'Firebase', 'WebSockets', 'Research'],
-    image: '/eng.png',  // Replace with the actual image path
+    image: '/eng.png',
   },
-  // Add more work experiences as needed
 ];
 
 const Work: React.FC = () => {

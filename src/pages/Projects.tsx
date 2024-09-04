@@ -28,7 +28,7 @@ const MotionBox = motion(Box);
 const MotionImage = motion(Image);
 const MotionHeading = motion(Heading);
 
-// Define a TypeScript type for your project data
+// Defined a TypeScript type for project data
 type Project = {
   title: string;
   detailedDescription: string;
@@ -45,7 +45,7 @@ const projects: Project[] = [
     title: "LocalLens",
     detailedDescription:
       "LocalLens integrates various APIs to provide personalized news content. It uses AWS BedRock for data storage and Python for backend processing, significantly enhancing user engagement by providing real-time data insights.",
-    image: "/locallens.png", // Replace with actual image path
+    image: "/locallens.png",
     tags: ["APIs and Integrations", "Cloud Computing"],
     tools: [
       "AWS BedRock",
@@ -55,14 +55,13 @@ const projects: Project[] = [
       "JavaScript",
       "Laserfiche API",
     ],
-    // sourceCode: "https://github.com/yourusername/locallens", // Replace with actual link
-    deployedLink: "https://asksloai.calpoly.io/", // Replace with actual link
+    deployedLink: "https://asksloai.calpoly.io/",
   },
   {
     title: "Gather",
     detailedDescription:
       "Gather is a web application built with React and Node.js, offering robust inventory management features. The application enhances group coordination and efficiency through role-based access control and dynamic item visibility.",
-    image: "/gather.png", // Replace with actual image path
+    image: "/gather.png",
     tags: ["Full-Stack Development", "Cloud Computing"],
     tools: [
       "TypeScript",
@@ -73,23 +72,23 @@ const projects: Project[] = [
       "Azure",
       "CI/CD",
     ],
-    sourceCode: "https://github.com/Gather307/Gather", // Replace with actual link
-    deployedLink: "https://thankful-tree-04ab28e1e.5.azurestaticapps.net/", // Replace with actual link
+    sourceCode: "https://github.com/Gather307/Gather",
+    deployedLink: "https://thankful-tree-04ab28e1e.5.azurestaticapps.net/",
   },
   {
     title: "Dog Breed Classifier",
     detailedDescription:
       "This project involves creating a convolutional neural network to accurately classify images of dog breeds. It leverages TensorFlow and Keras for model training and validation, achieving 95% accuracy in breed identification.",
-    image: "/dog.png", // Replace with actual image path
+    image: "/dog.png",
     tags: ["AI/ML"],
     tools: ["Python", "TensorFlow", "Keras (Deep Learning)"],
-    sourceCode: "https://github.com/palldas/Dog-Breed-Classifier", // Replace with actual link
+    sourceCode: "https://github.com/palldas/Dog-Breed-Classifier",
   },
   {
     title: "Emergeny Call Classifier",
     detailedDescription:
       "Project worked on at the DxHub in partnership with Accenture. Streamlined operational response times by 40% for the Seattle Police Department by creating an Emergency Call Classifier using React.js, AWS Comprehend (NLP), DynamoDB, and WebSocket API, significantly boosting real-time incident management.",
-    image: "/spd.png", // Replace with actual image path
+    image: "/spd.png",
     tags: ["AI/ML", "APIs and Integrations", "Cloud Computing"],
     tools: [
       "React.js",
@@ -103,23 +102,23 @@ const projects: Project[] = [
       "AWS Comprenend (NLP)",
     ],
     sourceCode:
-      "https://github.com/cal-poly-dxhub/emergency-call-classification", // Replace with actual link
-    deployedLink: "https://spdcare.calpoly.io/", // Replace with actual link
+      "https://github.com/cal-poly-dxhub/emergency-call-classification",
+    deployedLink: "https://spdcare.calpoly.io/",
   },
   {
     title: "Playlist Analyzer",
     detailedDescription:
       "Playlist Analyzer uses the Spotify API to provide insights into user playlists. It offers detailed analytics and recommendations based on listening habits, increasing user engagement by 50% through interactive music data visualizations.",
-    image: "/spotify.png", // Replace with actual image path
+    image: "/spotify.png",
     tags: ["Full-Stack Development", "APIs and Integrations"],
     tools: ["Python", "Flask", "HTML/CSS", "JavaScript", "Spotify API"],
-    sourceCode: "https://github.com/palldas/Spotify-Playlist-Analyzer", // Replace with actual link
+    sourceCode: "https://github.com/palldas/Spotify-Playlist-Analyzer",
   },
   {
     title: "Personal Website",
     detailedDescription:
       "This site! My personal portfolio contains information regarding my technical skills, personal projects, internships, and research opportunities. This web application was built with React.js and Node.js, utilizing the ChakraUI library for a user-friendly experience.",
-    image: "/site.png", // Replace with actual image path
+    image: "/site.png",
     tags: ["Full-Stack Development"],
     tools: [
       "TypeScript",
@@ -130,26 +129,26 @@ const projects: Project[] = [
       "Framer Motion",
       "Tailwind CSS",
     ],
-    sourceCode: "https://github.com/palldas/personal-website", // Replace with actual link
-    deployedLink: "https://palldas.vercel.app", // Replace with actual link
+    sourceCode: "https://github.com/palldas/personal-website",
+    deployedLink: "https://palldas.vercel.app",
   },
   {
     title: "File Texter",
     detailedDescription:
       "File Texter is an iMessage Sender that automates text message sending using Python and AppleScript on macOS. The script optimizes delivery times by implementing custom delays and message formats, boosting transmission rates by 25%.",
-    image: "/text.png", // Replace with actual image path
+    image: "/text.png",
     tags: ["APIs and Integrations", "Other"],
     tools: ["Python", "AppleScript", "macOS"],
-    sourceCode: "https://github.com/palldas/iMessageSender", // Replace with actual link
+    sourceCode: "https://github.com/palldas/iMessageSender",
   },
   {
     title: "Web Server Implementation",
     detailedDescription:
       "The web server implementation project showcases advanced systems programming techniques, including socket programming and multithreading in C. It supports HTTP GET/HEAD requests and dynamic content via CGI, improving response times by 30%.",
-    image: "/cgi.png", // Replace with actual image path
+    image: "/cgi.png",
     tags: ["Other", "Systems Programming", "Network Programming"],
     tools: ["C", "Unix", "HTTP Protocol"],
-    sourceCode: "https://github.com/palldas/Web-Server-Implementation", // Replace with actual link
+    sourceCode: "https://github.com/palldas/Web-Server-Implementation",
   },
 
   // ... other projects

@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             <Link href="/contact" _hover={{ textDecoration: 'none' }}>
               <Button colorScheme="purple" variant="solid" size="lg">Contact</Button>
             </Link>
-            <Link href="https://drive.google.com/file/d/1xat-Ylt8ayT-zRA1R824Kuft4VsAA2pW/view?usp=sharing" _hover={{ textDecoration: 'none' }} isExternal>  {/* Update with the actual path to your resume */}
+            <Link href="https://drive.google.com/file/d/144wSSvap33wrhR30mpnOBXZzAJgX9fl4/view?usp=sharing" _hover={{ textDecoration: 'none' }} isExternal>  {/* Update with the actual path to your resume */}
               <Button colorScheme="purple" variant="solid" size="lg">Resume</Button>
             </Link>
           </HStack>

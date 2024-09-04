@@ -12,7 +12,7 @@ import {
   Image,
   Text,
   HStack,
-  Link, // Import Link component
+  Link,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
         {/* Image Section */}
         <Box display="flex" justifyContent="center" alignItems="center">
           <Image
-            src="/contact.png" // Replace with your image path
+            src="/contact.png"
             alt="Contact Image"
             borderRadius="md"
             objectFit="cover"
