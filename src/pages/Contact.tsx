@@ -30,9 +30,17 @@ const Contact: React.FC = () => {
       px={{ base: 4, md: 8, lg: 20 }}
       paddingTop="90px"
     >
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+      <SimpleGrid
+        columns={{ base: 1, md: 1, lg: 2 }} // Change column count based on screen size
+        spacing={10}
+      >
         {/* Image Section */}
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          order={{ base: 2, lg: 1 }} // Order to display image below form on smaller screens
+        >
           <Image
             src="/contact.png"
             alt="Contact Image"
@@ -47,7 +55,8 @@ const Contact: React.FC = () => {
           as="form"
           spacing={4}
           align="stretch"
-          paddingTop="50px"
+          paddingTop={{ base: "20px", lg: "50px" }}
+          order={{ base: 1, lg: 2 }} // Order to display form above image on smaller screens
           onSubmit={(e) => {
             e.preventDefault(); // Prevent default form submission
             const form = e.target as HTMLFormElement;
@@ -63,6 +72,7 @@ const Contact: React.FC = () => {
               .then((data) => {
                 if (data.success) {
                   alert("Message sent successfully!");
+                  form.reset(); // Clear the form after successful submission
                 } else {
                   alert("There was an error sending your message.");
                 }
@@ -126,11 +136,13 @@ const Contact: React.FC = () => {
           <Button colorScheme="purple" size="lg" mt={4} type="submit">
             LET'S CONNECT!
           </Button>
+
           <MotionBox
             initial={{ y: 40 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
           >
+            {/* Social Media Links */}
             <HStack justifyContent="center" spacing={6} mt={6}>
               <Link href="https://www.linkedin.com/in/palldas" isExternal>
                 <FaLinkedin size="30px" color="white" />
