@@ -103,7 +103,6 @@ const projects: Project[] = [
     ],
     sourceCode:
       "https://github.com/cal-poly-dxhub/emergency-call-classification",
-    deployedLink: "https://spdcare.calpoly.io/",
   },
   {
     title: "Playlist Analyzer",
