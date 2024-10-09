@@ -84,7 +84,7 @@ const Home: React.FC = () => {
               </Button>
             </Link>
             <Link
-              href="https://docs.google.com/document/d/1hlH8KLc2WBWexgHDHq0Nb7O6iJA8lgk4bqvzn6NI5Sc/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1DkfCoZZsCGJsbqOlH-85TC6p1-CRAJH0/view?usp=sharing"
               _hover={{ textDecoration: "none" }}
               isExternal
             >
