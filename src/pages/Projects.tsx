@@ -44,7 +44,7 @@ const projects: Project[] = [
   {
     title: "LocalLens",
     detailedDescription:
-      "LocalLens integrates various APIs to provide personalized news content. It uses AWS BedRock for data storage and Python for backend processing, significantly enhancing user engagement by providing real-time data insights.",
+      "LocalLens is a full-stack local news chatbot with an information retrieval algorithm, leveraging AWS Bedrock and Laserfiche API to improve user comprehension by 60%, and winning 'Best Demo' award at Camp Poly Hacks. It Implemented a user-friendly Streamlit interface and a RAG model to enhance the accessibility and accuracy of city council records, improving data retrieval efficiency by 80% compared to existing solutions.",
     image: "/locallens.png",
     tags: ["APIs and Integrations", "Cloud Computing"],
     tools: [
@@ -55,7 +55,6 @@ const projects: Project[] = [
       "JavaScript",
       "Laserfiche API",
     ],
-    deployedLink: "https://asksloai.calpoly.io/",
   },
   {
     title: "Gather",
