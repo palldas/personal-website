@@ -45,25 +45,19 @@ const Skills: React.FC = () => {
               <Button leftIcon={<FaJava />} colorScheme="purple" variant="solid">Java</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<FaJs />} colorScheme="purple" variant="solid">C</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<SiMysql />} colorScheme="purple" variant="solid">SQL</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<FaJs />} colorScheme="purple" variant="solid">JavaScript</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiTypescript />} colorScheme="purple" variant="solid">TypeScript</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<SiMysql />} colorScheme="purple" variant="solid">SQL</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<SiMongodb />} colorScheme="purple" variant="solid">NoSQL</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<FaJs />} colorScheme="purple" variant="solid">HTML/CSS</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaJs />} colorScheme="purple" variant="solid">C</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaJs />} colorScheme="purple" variant="solid">Go</Button>
             </MotionWrapItem>
           </Wrap>
         </Box>
@@ -76,37 +70,40 @@ const Skills: React.FC = () => {
           <Wrap justify="center" spacing="4">
             {/* Wrap each button with MotionWrapItem for animations */}
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<FaAws />} colorScheme="purple" variant="solid">AWS</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<FaReact />} colorScheme="purple" variant="solid">React.js</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<FaNodeJs />} colorScheme="purple" variant="solid">Node.js</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<FaNodeJs />} colorScheme="purple" variant="solid">Express.js</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiFlask />} colorScheme="purple" variant="solid">Flask</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<SiFlask />} colorScheme="purple" variant="solid">REST API</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiMysql />} colorScheme="purple" variant="solid">MySQL</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<SiMongodb />} colorScheme="purple" variant="solid">NoSQL</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiMongodb />} colorScheme="purple" variant="solid">MongoDB</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaAws />} colorScheme="purple" variant="solid">AWS</Button>
+              <Button leftIcon={<FaLinux />} colorScheme="purple" variant="solid">Unix/Linux</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiTerraform />} colorScheme="purple" variant="solid">Terraform</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaDocker />} colorScheme="purple" variant="solid">Docker</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaGitAlt />} colorScheme="purple" variant="solid">GitHub</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<SiMicrosoftazure />} colorScheme="purple" variant="solid">Azure</Button>
-            </MotionWrapItem>
-            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaLinux />} colorScheme="purple" variant="solid">Unix</Button>
+              <Button leftIcon={<FaGitAlt />} colorScheme="purple" variant="solid">Git & GitHub</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiTensorflow />} colorScheme="purple" variant="solid">TensorFlow</Button>
