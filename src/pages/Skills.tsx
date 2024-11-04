@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Heading, Text, Wrap, WrapItem, Button, VStack } from '@chakra-ui/react';
-import { FaPython, FaJava, FaJs, FaAws, FaDocker, FaReact, FaNodeJs, FaGitAlt, FaLinux } from 'react-icons/fa';
-import { SiTypescript, SiFlask, SiMongodb, SiMysql, SiTerraform, SiMicrosoftazure, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy, SiJira } from 'react-icons/si';
+import { FaPython, FaJava, FaJs, FaAws, FaReact, FaNodeJs, FaGitAlt, FaLinux } from 'react-icons/fa';
+import { SiTypescript, SiFlask, SiMongodb, SiMysql, SiTerraform, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy, SiJira } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 // Define Motion Components
