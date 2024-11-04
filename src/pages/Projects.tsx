@@ -154,15 +154,15 @@ const projects: Project[] = [
     tools: ["Python", "AppleScript", "macOS"],
     sourceCode: "https://github.com/palldas/iMessageSender",
   },
-  {
-    title: "Web Server Implementation",
-    detailedDescription:
-      "The web server implementation project showcases advanced systems programming techniques, including socket programming and multithreading in C. It supports HTTP GET/HEAD requests and dynamic content via CGI, improving response times by 30%.",
-    image: "/cgi.png",
-    tags: ["Other", "Systems Programming", "Network Programming"],
-    tools: ["C", "Unix", "HTTP Protocol"],
-    sourceCode: "https://github.com/palldas/Web-Server-Implementation",
-  },
+  // {
+  //   title: "Web Server Implementation",
+  //   detailedDescription:
+  //     "The web server implementation project showcases advanced systems programming techniques, including socket programming and multithreading in C. It supports HTTP GET/HEAD requests and dynamic content via CGI, improving response times by 30%.",
+  //   image: "/cgi.png",
+  //   tags: ["Other", "Systems Programming", "Network Programming"],
+  //   tools: ["C", "Unix", "HTTP Protocol"],
+  //   sourceCode: "https://github.com/palldas/Web-Server-Implementation",
+  // },
 
   // ... other projects
 ];
