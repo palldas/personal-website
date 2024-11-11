@@ -145,15 +145,15 @@ const projects: Project[] = [
     sourceCode: "https://github.com/palldas/personal-website",
     deployedLink: "https://palldas.vercel.app",
   },
-  {
-    title: "File Texter",
-    detailedDescription:
-      "File Texter is an iMessage Sender that automates text message sending using Python and AppleScript on macOS. The script optimizes delivery times by implementing custom delays and message formats, boosting transmission rates by 25%.",
-    image: "/text.png",
-    tags: ["APIs and Integrations", "Other"],
-    tools: ["Python", "AppleScript", "macOS"],
-    sourceCode: "https://github.com/palldas/iMessageSender",
-  },
+  // {
+  //   title: "File Texter",
+  //   detailedDescription:
+  //     "File Texter is an iMessage Sender that automates text message sending using Python and AppleScript on macOS. The script optimizes delivery times by implementing custom delays and message formats, boosting transmission rates by 25%.",
+  //   image: "/text.png",
+  //   tags: ["APIs and Integrations", "Other"],
+  //   tools: ["Python", "AppleScript", "macOS"],
+  //   sourceCode: "https://github.com/palldas/iMessageSender",
+  // },
   // {
   //   title: "Web Server Implementation",
   //   detailedDescription:
