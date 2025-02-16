@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Heading, Text, Wrap, WrapItem, Button, VStack } from '@chakra-ui/react';
 import { FaPython, FaJava, FaJs, FaAws, FaReact, FaNodeJs, FaGitAlt, FaLinux } from 'react-icons/fa';
-import { SiTypescript, SiFlask, SiMongodb, SiMysql, SiTerraform, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy, SiJira } from 'react-icons/si';
+import { SiTypescript, SiFlask, SiMongodb, SiMysql, SiTerraform, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy, SiJira, SiPytorch, SiExpress } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 // Define Motion Components
@@ -79,7 +79,7 @@ const Skills: React.FC = () => {
               <Button leftIcon={<FaNodeJs />} colorScheme="purple" variant="solid">Node.js</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Button leftIcon={<FaNodeJs />} colorScheme="purple" variant="solid">Express.js</Button>
+              <Button leftIcon={<SiExpress />} colorScheme="purple" variant="solid">Express.js</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiFlask />} colorScheme="purple" variant="solid">Flask</Button>
@@ -107,6 +107,9 @@ const Skills: React.FC = () => {
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiTensorflow />} colorScheme="purple" variant="solid">TensorFlow</Button>
+            </MotionWrapItem>
+            <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Button leftIcon={<SiPytorch />} colorScheme="purple" variant="solid">PyTorch</Button>
             </MotionWrapItem>
             <MotionWrapItem whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button leftIcon={<SiScikitlearn />} colorScheme="purple" variant="solid">Scikit-learn</Button>

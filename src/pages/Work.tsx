@@ -6,10 +6,26 @@ const MotionHeading = motion(Heading);
 
 const workExperiences = [
   {
+    company: 'Apple',
+    title: 'Software Engineering Intern',
+    duration: 'May 2025 - August 2025',
+    description: 'Incoming Summer 2025 - IS&T Apple Online Store',
+    // skills: ['Backend'],
+    image: '/apple.png',
+  },
+  {
+    company: 'Google',
+    title: 'Software Engineering Intern',
+    duration: 'August 2025 - November 2025',
+    description: 'Incoming Fall 2025 - Google Cloud NetInfra',
+    // skills: ['Backend'],
+    image: '/google.png',
+  },
+  {
     company: 'Pacific Gas and Electric Company (PG&E)',
     title: 'Software Engineering Intern',
     duration: 'June 2024 - September 2024',
-    description: 'During my internship at Pacific Gas and Electric Company (PG&E) on the Cloud Platform Engineering Team, I had the opportunity to work on impactful projects that optimized cloud infrastructure and enhanced AI-driven workflows. I developed a custom Terraform web module with AWS EC2 and an Auto Scaling Group, automating resource management and significantly reducing cloud costs during peak customer usage. Additionally, I improved the performance of PG&E’s GenAI model by integrating function calling with Amazon Bedrock Converse API, Claude Sonnet 3.5 LLM, Python, and Boto3, enabling faster, automated decision-making. I also automated the detection of outdated Terraform modules across 600+ workspaces using a Python script and the Terraform Cloud API, improving system stability and version control. This experience deepened my skills in cloud computing, automation, and AI integration, all while contributing to real-world solutions at PG&E.',
+    description: 'During my internship at Pacific Gas and Electric Company (PG&E) on the Cloud Platform Engineering Team, I had the opportunity to work on impactful projects that optimized cloud infrastructure and enhanced AI-driven workflows. I developed a custom Terraform web module with AWS EC2 and an Auto Scaling Group, automating resource management and significantly reducing cloud costs during peak customer usage. Additionally, I improved the performance of one of PG&E’s GenAI chatbots by integrating function calling with Amazon Bedrock Converse API, Claude Sonnet 3.5 LLM, Python, and Boto3, enabling faster, automated decision-making. I also automated the detection of outdated Terraform modules across 600+ workspaces using a Python script and the Terraform Cloud API, improving system stability and version control. This experience deepened my skills in cloud computing, automation, and AI integration, all while contributing to real-world solutions at PG&E.',
     skills: ['Amazon Web Services (AWS)', 'Terraform', 'Python', 'Generative AI', 'AWS EC2', 'AWS Bedrock', 'AWS Data Migration Service (DMS)', 'Agile Methodologies', 'Jira', 'Confluence', 'Boto3', 'Terraform Cloud API', 'Infrastructure as Code (IaC)'],
     image: '/pge2.png',
   },
