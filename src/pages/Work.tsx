@@ -11,7 +11,7 @@ const workExperiences = [
     duration: 'May 2025 - August 2025',
     description: 'Incoming Summer 2025 - IS&T Apple Online Store',
     skills: ['Backend'],
-    image: '/apple.png',
+    image: '/apple2.png',
   },
   {
     company: 'Google',
