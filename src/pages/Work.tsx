@@ -10,7 +10,7 @@ const workExperiences = [
     title: 'Software Engineering Intern',
     duration: 'May 2025 - August 2025',
     description: 'Incoming Summer 2025 - IS&T Apple Online Store',
-    // skills: ['Backend'],
+    skills: ['Backend'],
     image: '/apple.png',
   },
   {
@@ -18,7 +18,7 @@ const workExperiences = [
     title: 'Software Engineering Intern',
     duration: 'August 2025 - November 2025',
     description: 'Incoming Fall 2025 - Google Cloud NetInfra',
-    // skills: ['Backend'],
+    skills: [],
     image: '/google.png',
   },
   {
